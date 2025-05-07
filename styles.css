@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #282c34;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    background-color: #61dafb;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Переход для анимации */
+}
+
+.header:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+    box-shadow: 0 4px 20px rgba(255,255,255,0.5); /* Тень при наведении */
+}
+
+.header h1 {
+    font-size: 2.5em;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+.profile-container {
+   display: flex;
+   justify-content: center; /* Центрирование фото */
+   margin-bottom: 15px; /* Отступ снизу */
+}
+
+.profile-photo {
+   width: 250px; /* Ширина фото */
+   height: 250px; /* Высота фото */
+   border-radius: 50%; /* Круглая форма */
+   transition: transform 0.3s ease; /* Переход для анимации */
+   border: 3px solid #007bff; /* Граница вокруг фото */
+}
+
+.profile-photo:hover {
+   transform: scale(1.1); /* Увеличение при наведении на фото */
+}
+
+.about, .skills {
+    margin-top: 20px;
+    transition: background-color 0.3s ease; /* Переход для фона */
+}
+
+.about:hover, .skills:hover{
+    background-color: #444c56; /* Изменение фона при наведении */
+}
+
+.about h2, .skills h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style-type: none; /* Убираем маркеры списка */
+}
+
+.skills li {
+    background-color: #444c56; /* Цвет фона для элементов списка */
+    margin-bottom: 5px; /* Отступ между элементами списка */
+    padding: 10px; /* Внутренний отступ */
+    border-radius: 5px; /* Закругленные углы */
+}
+
+.skills li:hover {
+    background-color: #61dafb; /* Изменение фона элемента списка при наведении */
+    transform: scale(1.05); /* Увеличение элемента списка при наведении */
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Переход для изображений */
+}
+
+.gallery-item:hover {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+    box-shadow: 0 4px 15px rgba(255,255,255,0.3); /* Тень при наведении на изображение */
+}
+.contact a {
+    color: white; /* Цвет ссылки */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.footer a {
+    color: white; /* Цвет ссылки */
+}
